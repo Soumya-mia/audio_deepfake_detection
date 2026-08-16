@@ -1,0 +1,9 @@
+data/
+venv/
+__pycache__/
+*.pyc
+trained_models/
+*.pth
+*.onnx
+.DS_Store
+
