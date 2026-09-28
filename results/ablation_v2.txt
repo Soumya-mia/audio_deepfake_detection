@@ -1,0 +1,5 @@
+FAIR ABLATION STUDY (50 epochs)
+==================================================
+Magnitude-only:     86.00%
+Phase-only:         82.50%
+Fused (Proposed):   86.75%
