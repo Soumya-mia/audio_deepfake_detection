@@ -55,8 +55,8 @@ class AudioLoader:
         # Map split names to folder names and label file names (inside CM protocols folder)
         split_map = {
             'train': ('ASVspoof2019_LA_train', 'ASVspoof2019.LA.cm.train.trn.txt'),
-            'dev':   ('ASVspoof2019_LA_dev',   'ASVspoof2019.LA.cm.dev.trn.txt'),
-            'eval':  ('ASVspoof2019_LA_eval',  'ASVspoof2019.LA.cm.eval.trn.txt')
+            'dev':   ('ASVspoof2019_LA_dev',   'ASVspoof2019.LA.cm.dev.trl.txt'),
+            'eval':  ('ASVspoof2019_LA_eval',  'ASVspoof2019.LA.cm.eval.trl.txt')
         }
         
         folder, label_file = split_map[split]
