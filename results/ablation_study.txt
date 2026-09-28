@@ -1,0 +1,6 @@
+ABLATION STUDY RESULTS
+==================================================
+Magnitude-only:     100.00%
+Phase-only:         50.25%
+Fused (Proposed):   100.00%
+Phase contribution: +0.00%
