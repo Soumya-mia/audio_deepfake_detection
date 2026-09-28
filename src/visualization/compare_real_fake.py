@@ -1,7 +1,6 @@
 """
 compare_real_fake.py - Forensic FFT comparison between Real and Fake audio.
 
-This script generates the critical "smoking gun" visualization:
 - Real voices peak naturally at ~1030 Hz (human vocal tract resonance).
 - Fake voices peak artificially at ~250 Hz (just the pitch, missing formants).
 
@@ -84,8 +83,8 @@ if __name__ == "__main__":
         if real_signal is not None and fake_signal is not None:
             break
 
-    print(f"✅ Real sample found: {real_label}")
-    print(f"✅ Fake sample found: {fake_label}")
+    print(f"Real sample found: {real_label}")
+    print(f"Fake sample found: {fake_label}")
 
     # 3. Compute and print peak frequencies
     freqs_real, mag_real = get_fft(real_signal, sr)
@@ -94,11 +93,11 @@ if __name__ == "__main__":
     real_peak = freqs_real[np.argmax(mag_real)]
     fake_peak = freqs_fake[np.argmax(mag_fake)]
 
-    print(f"\n📊 Real voice peak frequency: {real_peak:.0f} Hz")
-    print(f"📊 Fake voice peak frequency: {fake_peak:.0f} Hz")
-    print(f"\n🔬 The fake voice has its energy stuck in the deep bass ({fake_peak:.0f} Hz),")
+    print(f"\n Real voice peak frequency: {real_peak:.0f} Hz")
+    print(f"Fake voice peak frequency: {fake_peak:.0f} Hz")
+    print(f"\n The fake voice has its energy stuck in the deep bass ({fake_peak:.0f} Hz),")
     print(f"   while the real voice resonates naturally at the human speech peak ({real_peak:.0f} Hz).")
 
     # 4. Generate the plot
     plot_real_vs_fake(real_signal, fake_signal, sr, save_path="results/real_vs_fake_fft.png")
-    print("\n✅ Comparison plot rendered successfully.")
+    print("\n Comparison plot rendered successfully.")

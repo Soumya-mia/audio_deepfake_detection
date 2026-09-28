@@ -7,3 +7,4 @@ trained_models/
 *.onnx
 .DS_Store
 
+*.npy
