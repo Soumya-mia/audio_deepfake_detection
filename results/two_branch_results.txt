@@ -1,0 +1,9 @@
+TWO-BRANCH ARCHITECTURE RESULTS
+==================================================
+
+magnitude: 86.00% ± 1.06%  runs=[86.75, 86.75, 84.5]
+naive_fused: 86.50% ± 0.20%  runs=[86.5, 86.25, 86.75]
+two_branch: 86.75% ± 0.00%  runs=[86.75, 86.75, 86.75]
+
+Two-branch vs Magnitude:   +0.75%
+Two-branch vs Naive Fused: +0.25%
