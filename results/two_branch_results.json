@@ -1,0 +1,45 @@
+{
+  "config": {
+    "device": "mps",
+    "batch_size": 32,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "use_full_train": false,
+    "use_full_eval": false,
+    "train_samples": 5000,
+    "eval_samples": 1000,
+    "class_weights": {
+      "real": 1.0,
+      "fake": 1.0
+    }
+  },
+  "results": {
+    "magnitude": {
+      "accuracy_per_seed": [
+        89.1,
+        89.0,
+        88.8
+      ],
+      "mean": 88.96666666666665,
+      "std": 0.12472191289246395
+    },
+    "naive_fused": {
+      "accuracy_per_seed": [
+        89.2,
+        89.1,
+        89.0
+      ],
+      "mean": 89.10000000000001,
+      "std": 0.08164965809277376
+    },
+    "two_branch": {
+      "accuracy_per_seed": [
+        89.0,
+        88.9,
+        88.8
+      ],
+      "mean": 88.89999999999999,
+      "std": 0.08164965809277376
+    }
+  }
+}
